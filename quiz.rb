@@ -5,8 +5,8 @@ value = gets.chomp().to_i()
 
 
 while (value != my_number) do
-  puts "Nope, SUCKER try again!"
-  if value < my_number 
+  puts "Nope, try again!"
+  if value < my_number
     puts "Higher..."
 
   else
@@ -15,5 +15,13 @@ while (value != my_number) do
   end
   value = gets.chomp().to_i()
 end
+
+# Zsolts Example
+# while (value != my_number) do
+#   puts "Nope, try higher!" if < 
+#
+#   end
+#   value = gets.chomp().to_i()
+# end
 
 puts "Yep, the was it"
