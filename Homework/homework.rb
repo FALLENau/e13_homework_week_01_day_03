@@ -112,5 +112,5 @@ users = {
 # users["Erik"][:pets].merge!(dog: "Fluffy")
 
 # 9. Add yourself to the users hash
-# users ["Reece"] = {:home_town => "Melbourne", :pets => {"Billy" => :cat}}
-puts users
+users ["Reece"] = {:favourite_numbers => [7], :home_town => "Melbourne", :pets => {"Billy" => :cat}}
+puts users["Reece"]
