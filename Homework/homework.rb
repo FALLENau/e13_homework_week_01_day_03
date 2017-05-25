@@ -2,27 +2,27 @@
 
 # lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'Princes Street']
 
-# # 1. Work out how many stops there are in the array
+# # # 1. Work out how many stops there are in the array
 # puts lines.length()
-#
-# # 2. Return 'Edinburgh Park' from the array
+# #
+# # # 2. Return 'Edinburgh Park' from the array
 # puts lines[1]
-#
-# # 3. How many ways can we return 'Princes Street' from the array?
+# #
+# # # 3. How many ways can we return 'Princes Street' from the array?
 # puts lines[4]
 # puts lines[-1]
 # puts lines.last(1)
+# #Zsolt example
+# # lines.fetch(4)
 #
-# # 4. Work out the index position of 'Haymarket'
-# puts lines[3]
+# # # 4. Work out the index position of 'Haymarket'
+# puts lines.index("Haymarket")
 # puts lines[-2]
 
 # # 5. Add 'Airport' to the start of the array
 # puts lines.unshift("Airport")
-# puts lines[0] = "Airport"
 
 # 6. Add 'York Place' to the end of the array
-# puts lines.pop() => "York Place"
 # puts lines << "York Place"
 
 # # 7. Remove 'Edinburgh Park' from the array using it's name
@@ -34,9 +34,12 @@
 # 9. Reverse the positions of the stops in the array
 # puts lines.reverse
 
+# 10. Replace "Gyle Centre" with "Airport"
+# puts lines[0] = "Airport"
+
 ### B. Given the following data structure:
 
-my_hash = {"0" => "Zero", 1 => "One", :two => "Two", "two" => 2}
+# my_hash = {"0" => "Zero", 1 => "One", :two => "Two", "two" => 2}
 
 # 1. How would you return the string `"One"`?
 # puts my_hash[1]
@@ -49,9 +52,11 @@ my_hash = {"0" => "Zero", 1 => "One", :two => "Two", "two" => 2}
 
 # 4. How would you add `{3 => "Three"}` to the hash?
 # my_hash[3] = "Three"
+# puts my_hash
 
 # 5. How would you add `{:four => 4}` to the hash?
 # my_hash[:four] = 4
+# puts  my_hash
 
 ### C. Given the following data structure:
 
@@ -96,21 +101,36 @@ users = {
 # 3. Return the array of Erik's favorite numbers
 # puts users["Erik"][:favourite_numbers]
 
+
 # 4. Return the type of Avril's pet Colin
-# puts users["Avril"][:pets]
+# puts users["Avril"][:pets]["colin"]
 
 # 5. Return the smallest of Erik's favorite numbers
-# puts users["Erik"][:favourite_numbers]
+# puts users["Erik"][:favourite_numbers].min
 
 # 6. Add the number `7` to Erik's favorite numbers
-# users["Erik"][:favourite_numbers] = 7
+# users["Erik"][:favourite_numbers] = [7, 8, 12, 24]
+# puts users
 
 # 7. Change Erik's hometown to Edinburgh
-# users["Erik"][:home_town] = "Fluffy"
+# users["Erik"][:home_town] = "Edinburgh"
+# puts users # or users["Erik"][:home_town].replace("Edinburgh")
 
 # 8. Add a pet dog to Erik called "Fluffy"
-# users["Erik"][:pets].merge!(dog: "Fluffy")
+# users["Erik"][:pets].merge!("Fluffy" => :dog)
+#or users["Erik"][:pets]["fluffy"] = :dog
+#puts users["Erik"]
 
 # 9. Add yourself to the users hash
-users ["Reece"] = {:favourite_numbers => [7], :home_town => "Melbourne", :pets => {"Billy" => :cat}}
-puts users["Reece"]
+# users ["Reece"] = {
+#   :favourite_numbers => [7],
+#   :home_town => "Melbourne",
+#   :pets => {"Billy" => :cat}
+# }
+# Zsolt exmaple for varitable, not hash.
+# reece_hash = {
+  # :favourite_numbers => [7],
+  # :home_town => "Melbourne",
+  # :pets => {"Billy" => :cat}}
+# users["Reece"] = reece_hash
+# puts users
