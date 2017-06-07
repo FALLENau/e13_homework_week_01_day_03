@@ -1,13 +1,13 @@
 ### A. Given the following data structure:
 
-# lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'Princes Street']
+lines = ['Gyle Centre', 'Edinburgh Park', 'Murrayfield Stadium', 'Haymarket', 'Princes Street']
 
-# # # 1. Work out how many stops there are in the array
-# puts lines.length()
-# #
-# # # 2. Return 'Edinburgh Park' from the array
-# puts lines[1]
-# #
+# # 1. Work out how many stops there are in the array
+puts lines.length()
+
+# # 2. Return 'Edinburgh Park' from the array
+puts lines[1]
+
 # # # 3. How many ways can we return 'Princes Street' from the array?
 # puts lines[4]
 # puts lines[-1]
@@ -117,16 +117,16 @@ users = {
 # puts users # or users["Erik"][:home_town].replace("Edinburgh")
 
 # 8. Add a pet dog to Erik called "Fluffy"
-# users["Erik"][:pets].merge!("Fluffy" => :dog)
+users["Erik"][:pets].merge!("Fluffy" => :dog)
 #or users["Erik"][:pets]["fluffy"] = :dog
 #puts users["Erik"]
 
 # 9. Add yourself to the users hash
-# users ["Reece"] = {
-#   :favourite_numbers => [7],
-#   :home_town => "Melbourne",
-#   :pets => {"Billy" => :cat}
-# }
+users ["Reece"] = {
+  :favourite_numbers => [7],
+  :home_town => "Melbourne",
+  :pets => {"Billy" => :cat}
+}
 # Zsolt exmaple for varitable, not hash.
 # reece_hash = {
   # :favourite_numbers => [7],
